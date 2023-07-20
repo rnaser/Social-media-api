@@ -1,5 +1,6 @@
 from tkinter import Tk, Label, Button
 
+
 class GUI:
     def __init__(self, master):
         self.master = master
