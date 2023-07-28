@@ -29,7 +29,8 @@ class GUI:
     def API1(self):
         print("API1 results")
     def API2(self):
-        print("API2 results")
+        import os
+        os.startfile('C:/Users/rami/Documents/GitHub/Social-media-api/test.py')
 
 root = Tk()
 my_gui = GUI(root)

@@ -1,0 +1,20 @@
+import requests
+import re
+from csv import writer
+data = requests.get("http://ip-api.com/csv/182.37.48.127")
+rawdata = str(data.text)
+list = (rawdata.split(","))
+#res_list = re.findall(r'[^\n]+', str(list))
+#print("Resultant list:", res_list)
+#print(res_list[3])
+#list2 =(str(list).split("\n"))
+#list2 = re.split('\n', list)
+#print(list.length())
+#f = open('C:/Users/rami\Desktop/test/test.csv', 'a')
+#writer_object = writer(f)
+#writer_object.writerow(list)
+#f.close()
+#print(data.text)
+#print(rawdata)
+print(list[2])
+#print(list2[2])

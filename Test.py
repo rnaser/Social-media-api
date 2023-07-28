@@ -1,4 +1,5 @@
 import requests
+<<<<<<< Updated upstream
 print(requests.text.get("http://ip-api.com/line/24.48.0.1?fields=18032401"))
 from csv import writer
 response = requests.get("http://ip-api.com/csv/43.255.158.3 ?fields=status,continent,country,city,timezone,isp,org,proxy,query")
@@ -31,12 +32,23 @@ print(response.text)
 list = (response.text)
 list = (response.text.split(","))
 
+=======
+from csv import writer
+response = requests.get("http://ip-api.com/csv/24.48.0.1?fields=status,continent,country,city,timezone,isp,org,proxy,query")
+#print(response.text)
+#list = (response.text)
+list = (response.text.split(","))
+>>>>>>> Stashed changes
 f = open('C:/Users/rami\Desktop/test/test.csv', 'a')
 writer_object = writer(f)
 writer_object.writerow(list)
 f.close()
 
+<<<<<<< Updated upstream
 print(request.get("http://ip-api.com/line/24.48.0.1?fields=18032401"))
+=======
+
+>>>>>>> Stashed changes
 
 
 print(list[1])
